@@ -17,9 +17,10 @@ def register(request):
     return render(request, "registration/register.html", context)
 
     
-def login(request):
-    if request.method == "POST":
-        pass
-    else:
-        return render(request, "user/login.html")
-    
+# def login(request):
+#     if request.method == "POST":
+#         pass
+#     else:
+#         return render(request, "user/login.html")
+
+
