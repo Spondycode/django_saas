@@ -12,7 +12,7 @@
     {% else %}
     <a
       class="btn btn-danger"
-      href="#"
+      href="{% url 'create_checkout_session' course.id %}"
       >Buy Course</a
     >
     {% endif %}
