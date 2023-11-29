@@ -1,0 +1,48 @@
+{% extends 'base.html' %}
+
+<div class="container-fluid">
+  {% block content %} {% if user.is_authenticated %}
+
+  <h1>You are Logged in {{ user.username }}</h1>
+
+  <img
+    class="mx-auto d-block img-fluid w-100"
+    src="https://res.cloudinary.com/df4x68pyj/image/upload/v1700742026/cld-sample-2.jpg"
+    alt="snowy mountain peak"
+  />
+
+  <div class="container-fluid">
+    <div class="row bg-secondary">
+      <div class="col-md-6">
+        <h2>Heading</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Non mollitia
+          asperiores optio perspiciatis impedit molestiae sint quaerat, ipsum
+          est iusto, magnam rerum doloremque! Tempore eligendi neque rem! Qui,
+          eos. Cum veniam repudiandae consectetur iste qui sed rem enim ipsum
+          laborum.
+        </p>
+      </div>
+      <div class="col-md-6">
+        <h2>Heading</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Non mollitia
+          asperiores optio perspiciatis impedit molestiae sint quaerat, ipsum
+          est iusto, magnam rerum doloremque! Tempore eligendi neque rem! Qui,
+          eos. Cum veniam repudiandae consectetur iste qui sed rem enim ipsum
+          laborum.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+{% else %}
+
+<h1>Hello World</h1>
+<p>
+  Lorem ipsum dolor sit amet consectetur adipisicing elit. Non mollitia
+  asperiores optio perspiciatis impedit molestiae sint quaerat, ipsum est iusto,
+  magnam rerum doloremque! Tempore eligendi neque rem! Qui, eos. Cum veniam
+  repudiandae consectetur iste qui sed rem enim ipsum laborum.
+</p>
+{% endif %} {% endblock content %}
